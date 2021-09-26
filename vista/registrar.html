@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Producto</title>
+</head>
+
+<body>
+    <h1 class="h1">Bienvenido grupo Rojo</h1>
+    <div class="flexsearch">
+        <div class="flexsearch--wrapper">
+            <form class="flexsearch--form" action="#" method="post">
+                <div class="flexsearch--input-wrapper">
+                    <input class="flexsearch--input" type="search" placeholder="search">
+                </div>
+                <input class="flexsearch--submit" type="submit" value="&#10140;" />
+            </form>
+        </div>
+    </div>
+    <header class="cabezera">
+        <h1>INVENTARIUM</h1>
+    </header>
+    <nav id="navegar">
+        <ul>
+            <a href="dashboard.html">
+                <li>DASHBOARD</li>
+            </a>
+            <a href="consultar.html">
+                <li>CONSULTAR PRODUCTOS</li>
+            </a>
+            <a href="registrar.html">
+                <li>REGISTRAR PRODUCTOS</li>
+            </a>
+            <a href="cerrar.html">
+                <li>CERRAR SESION</li>
+            </a>
+        </ul>
+    </nav>
+    <section class="main">
+        <form>
+            <div id="divRegistrar">
+                <table id="tblRegistrar">
+                    <thead id="theadRegistrar">
+                        <tr>
+                            <td colspan="2">Registrar Datos de Producto</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyRegistrar">
+                        <tr>
+                            <td>
+                                Codigo SKU
+                            </td>
+                            <td>
+                                <input type="hidden" value="" id="hidIdSku">
+                                <input type="text" value="" id="txtCodSku">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Nombre
+                            </td>
+                            <td>
+                                <input type="text" value="" id="txtNombre">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Cantidad
+                            </td>
+                            <td>
+                                <input type="text" value="" id="txtCantidad">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Precio
+                            </td>
+                            <td>
+                                <input type="text" value="" id="txtPrecio">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" value="Registrar" id="btnRegistrar" name="btnRegistrar">
+                                <input type="button" value="Modificar" id="btnModificar" name="btnModificar">
+                                <input type="button" value="Eliminar" id="btnEliminar" name="btnEliminar">
+                                <input type="button" value="Limpiar" id="btnLimpiar" name="btnLimpiar">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </section>
+</body>
+<br>
+<footer>Todos los derechos reservados &copy; /<i>Desing By: Equipo Rojo</i>
+</footer>
+
+</html>
