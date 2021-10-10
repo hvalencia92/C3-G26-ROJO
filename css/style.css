@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'esp bold';
+    src: url('../Librerias/esp.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'monserrate';
+    src: url('../Librerias/Montserrat-Light.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+    background-color: whitesmoke;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.navegar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    background-image: url('../img/background.jpg');
+    background-size: 100% 100%;
+   
+}
+.navegar h2{
+    background-image: url('../img/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+    text-align: center;
+    height: 80px;
+    margin-bottom: 30px;
+}
+.navegar ul a{
+    font-family: monserrate;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 15px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+ul li:hover{
+    padding-left: 50px;
+}
+.footer{
+    font-family: monserrate;
+    font-size: 10px;
+    background-color:white;
+    position: fixed;
+    bottom: 0;
+    left: 350px;
+    height: 80px;
+    width: 100vw;
+    padding-top: 30px;
+    padding-right: 30px;
+    text-align: center;
+    color: gray;
+}
+header{
+    height: 110px;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 350px;
+    overflow: hidden;
+    background: orange;
+}
+.wrapper{
+    width: 90%;
+    max-width: 1400px;
+}
+.wrapper h1{
+    margin-top: 20px;
+    text-align: right;
+    font-family: monserrate;
+}
+.main{
+    position: fixed;
+    top: 110px;
+    left: 350px;
+    width: 100vw;
+    height: 70%;
+    overflow: hidden;
+    background: white;
+}
+.main h3{
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+    font-family: monserrate;
+    font-size: 30px;
+}
+.demo, .demo-2 {
+    position:fixed;
+    left: 300px;
+    top: 30px;
+    height:100px;
+    width:500px;
+}
+.demo .form-search, .demo-2 .form-search {
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+.demo .form-search input[type=text],
+.demo-2 .form-search input[type=text] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+    border: solid 1px #ccc;
+    padding: 9px 18px;
+    width: 200px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+.demo-2 .form-search input[type=text] {
+    width:60px;
+    position:absolute;
+    right:0px;
+    z-index:1000;
+    padding:8px 12px;
+    cursor:pointer;
+}
+.demo-2 .form-search div.input-group {
+    width:60px;
+}
+.demo .form-search input[type=text]:focus {
+    width: 350px;
+    background-color: #fff;
+}
+.demo-2 .form-search input[type=text]:focus {
+    position:absolute;
+    right:60px;
+    width:250px;
+}
+.consultar{
+    font-family: esp bold;
+    font-size: 20px;
+    position: fixed;
+    top: 300px;
+    left: 400px;
+    color: gray;
+}
+.consultar h4{
+    text-align: center;
+}
+.container {
+    /* background: linear-gradient(45deg, #49a09d, #5f2c82); */
+    background: transparent;
+	font-family: sans-serif;
+	font-weight: 100;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+table {
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	/* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+td {
+    font-family: monserrate;
+	padding: 15px;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: black;
+}
+th {
+    font-family: esp bold;
+	padding: 15px;
+	background-color: white;
+	color: gray;
+	text-align: left;
+}
+thead th {
+		background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+tbody tr :hover {
+			background-color: rgba(255, 255, 255, 0.3);
+		}
+
+	td :hover :before{
+		position: relative;
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255, 255, 255, 0.2);
+				z-index: -1;
+}
+.btnin{
+    width: 80%;
+    border: 3px solid whitesmoke;
+    margin-left: 45px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 11px 10px;
+    background:#CCCCCC;
+    font-size: 14px;
+    font-family: monserrate;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.btn{
+    width: 70%;
+    height: 40px;
+    background: whitesmoke;
+    color: blue;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    margin-left: 70px;
+    font-family: monserrate;
+    font-size: 20px;
+}
+.container h5 {
+    font-family: monserrate;
+    font-size: 30px;
+    text-align: center;
+    color: gray;
+}
+.Registrar{
+    position: fixed;
+    width: 70%;
+    height: 60%;
+    top: 200px;
+    left: 380px;
+}
+.Registrar h4{
+    font-family: monserrate;
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: center;
+    color: gray;
+}
+.btnrg{
+    width: 30%;
+    height: 40px;
+    border: 3px solid whitesmoke;
+    margin-top: 20px;
+    margin-left: 550px;
+    background: white;
+    font-size: 14px;
+    font-family: monserrate;
+    font-weight: bold;
+    border-radius: 20px;
+} 
+::placeholder{
+    color:#CCCCCC;
+    text-align: center;
+    font-family: esp bold;
+    font-size: 20px;
+}
+.Botones{
+    width: 70%;
+    height: 60%;
+    position: fixed;
+    top: 600px;
+    left: 750px;
+}
+.btnIn{
+    width: 12%;
+    height: 40px;
+    background: whitesmoke;
+    color: blue;
+    margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 20px;
+    font-family: monserrate;
+    font-size: 20px;
+}

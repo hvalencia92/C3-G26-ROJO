@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'esp bold';
+    src: url('../Librerias/esp.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'monserrate';
+    src: url('../Librerias/Montserrat-Light.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    height: 100vh;
+    font-family:monserrate;
+    background-color: #000000;
+    background-image: url('../img/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-login{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 0px 10px;
+    border-left: 1px solid black;
+    box-shadow: 50px 50px 50px black;
+}
+
+.form-login h5{
+    background-image: url('../img/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    text-align: center;
+    height: 103px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+}
+
+.controls{
+    width: 80%;
+    border: 3px solid white;
+    margin-left: 45px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 11px 10px;
+    background: none;
+    font-size: 14px;
+    font-family: monserrate;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.buttons{
+    width: 60%;
+    height: 40px;
+    background: whitesmoke;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    margin-left: 70px;
+    font-family: monserrate;
+    font-size: 20px;
+} 
+
+.form-login p{
+    height: 40px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.form-login a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.form-login a:hover{
+    text-decoration: underline;
+}
+
+::placeholder{
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+}
+.footer{
+    color: white;
+    text-align: center;
+    margin-top: 350px;
+    font-size: 30px;
+    font-family:esp bold;
+}

@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="pagina de inventario">
+    <meta name="keywords" content="inventario,INVENTARIUM,COLOMBIA">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>DASHBOARD</title>
 </head>
 
 <body>
-    <h1 class="h1">Bienvenido grupo Rojo</h1>
-    <div class="flexsearch">
-        <div class="flexsearch--wrapper">
-            <form class="flexsearch--form" action="#" method="post">
-                <div class="flexsearch--input-wrapper">
-                    <input class="flexsearch--input" type="search" placeholder="search">
-                </div>
-                <input class="flexsearch--submit" type="submit" value="&#10140;" />
+    <header>
+        <div class="demo">
+            <form class="form-search">
+              <div class="input-group">
+                <input class="form-control form-text" maxlength="128" placeholder="Buscar" size="15" type="text" />
+                <!-- <span class="input-group-btn"><button class="btn btn-primary"><i class="fa fa-search fa-lg">&nbsp;</i></button></span> -->
+              </div>
             </form>
-        </div>
+          </div>
+    <div class="wrapper">
+        <h1>Bienvenido, grupo Rojo</h1>
     </div>
-    <header class="cabezera">
-        <h1>INVENTARIUM</h1>
     </header>
-    <nav id="navegar">
-        <ul>
+    <nav class="navegar" id="navegar">
+        <h2></h2>
+        <ul class="vertical">
             <a href="dashboard.html">
                 <li>DASHBOARD</li>
             </a>
@@ -34,19 +37,19 @@
             <a href="registrar.html">
                 <li>REGISTRAR PRODUCTOS</li>
             </a>
-            <a href="cerrar.html">
+            <a href="#">
                 <li>CERRAR SESION</li>
             </a>
         </ul>
     </nav>
     <section class="main">
-        <fieldset>
-            <legend>Estadisticas</legend>
-            <img src="dashboard.png"alt="Estadisticas" width="200" height="200">
-        </fieldset>
+        <h3>Estadisticas</h3>
+        <img src="..//img/Estadisticas.jpg" width="60%" height="70%">
     </section>
 </body>
 <br>
-<footer>Todos los derechos reservados &copy; /<i>Desing By: Equipo Rojo</i>
-</footer>
+<div class="footer">
+    <footer>Todos los derechos reservados &copy; /<i>Desing By: Equipo Rojo</i>
+    </footer>
+</div>
 </html>
